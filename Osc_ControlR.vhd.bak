@@ -80,7 +80,7 @@ begin
 				when x"8" => --note on A
 					phasebuf(cmdb) <= std_logic_vector(to_unsigned(NOTE(dat_int),24));
 				when x"9" => --note off A
-					phasebuf(cmdb) <= "000000000000000000000000";
+					phasebuf(cmdb) <= 0;
 				when others =>
 				
 				end case;
